@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintNamesLibrary", "PrintNamesLibrary.csproj", "{533EB370-E778-4000-B26F-0E35338FA0E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintNamesLibrary", "PrintNamesLibrary.csproj", "{533EB370-E778-4000-B26F-0E35338FA0E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPrintConsole", "..\TestPrintConsole\TestPrintConsole.csproj", "{3D6087B6-19B5-44A8-8933-7CFC1FC932FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPrintConsole", "..\TestPrintConsole\TestPrintConsole.csproj", "{3D6087B6-19B5-44A8-8933-7CFC1FC932FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintNamesTests", "..\PrintNamesTests\PrintNamesTests.csproj", "{0DC1D1F1-11BD-4392-96B1-3FC4F3D7B9DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3D6087B6-19B5-44A8-8933-7CFC1FC932FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D6087B6-19B5-44A8-8933-7CFC1FC932FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D6087B6-19B5-44A8-8933-7CFC1FC932FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC1D1F1-11BD-4392-96B1-3FC4F3D7B9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC1D1F1-11BD-4392-96B1-3FC4F3D7B9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC1D1F1-11BD-4392-96B1-3FC4F3D7B9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC1D1F1-11BD-4392-96B1-3FC4F3D7B9DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
