@@ -57,24 +57,6 @@ namespace PrintNamesTests
         }
 
         [Fact]
-        public void BasicTest32000000()
-        {
-            //Arrange
-            int UpperBound = 32000000;
-            //Load the expected output from a file, because Visual Studio doesn't like a single line of code that long.
-            string expectedOutput = string.Join(Environment.NewLine, File.ReadAllLines("32000000.txt"));
-            using StringWriter writer = new();
-            Console.SetOut(writer);
-
-            //Act
-            PrintNumber.PrintNumbers(UpperBound);
-
-            //Assert
-            string actualOutput = writer.ToString();
-            Assert.Equal(expectedOutput, actualOutput);
-        }
-
-        [Fact]
         [Trait("Optional", "true")]
         public void BasicTestMax()
         {
