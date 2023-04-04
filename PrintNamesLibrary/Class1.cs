@@ -23,5 +23,28 @@
                 Console.WriteLine(PrintString);
             }
         }
+
+        public static void PrintNumbers(List<NumberNamePair> pairs, int UpperBound)
+        {
+            for (int i = 1; i <= UpperBound; i++)
+            {
+                string PrintString = "";
+                foreach(NumberNamePair pair in pairs)
+                {
+                    if (i % pair.Number == 0)
+                    {
+                        //if the current line number matches, add the appropriate name and a space
+                        PrintString += pair.Name + " ";
+                    }
+                }
+
+                if (PrintString == "")
+                {
+                    //Only print the line number if there are no matching number/name pairs for this line
+                    PrintString = i.ToString();
+                }
+                Console.WriteLine(PrintString);
+            }
+        }
     }
 }
