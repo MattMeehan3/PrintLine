@@ -22,7 +22,7 @@ namespace PrintNamesTests
         }
 
         [Fact]
-        public void BasicTest100()
+        public void BasicTest()
         {
             //Arrange
             int UpperBound = 100;
@@ -75,6 +75,7 @@ namespace PrintNamesTests
         }
 
         [Fact]
+        [Trait("Optional", "true")]
         public void BasicTestMax()
         {
             //The client specifically requested the ability to run the application with an 
