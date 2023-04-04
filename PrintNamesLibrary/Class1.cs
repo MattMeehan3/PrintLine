@@ -2,10 +2,8 @@
 {
     public class Class1
     {
-        public static string[] PrintNumbers(int UpperBound)
+        public static void PrintNumbers(int UpperBound)
         {
-            string[] AllLines = new string[UpperBound+1];
-
             for (int i = 1; i <= UpperBound; i++)
             {
                 string PrintString = "";
@@ -22,11 +20,8 @@
                 {
                     PrintString = i.ToString();
                 }
-
-                AllLines[i] = PrintString;
+                Console.WriteLine(PrintString);
             }
-
-            return AllLines;
         }
     }
 }
