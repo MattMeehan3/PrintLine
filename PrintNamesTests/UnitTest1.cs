@@ -75,6 +75,41 @@ namespace PrintNamesTests
         }
 
         [Fact]
+        public void BasicTestMax()
+        {
+            //The client specifically requested the ability to run the application with an 
+            //upper bound of int.MaxValue
+
+            //As this would result in approximately 21.5GB of output this test just makes sure
+            //the library can complete the request, dumping the output into a null writer.
+
+            //If it was necessary to verify the output at this scale, we could save the results
+            //of this test when the software is in a known-good state to be tested against later
+            //versions of the library.
+            
+            //This test does not verify the output at this scale.
+
+            //Arrange
+            int UpperBound = int.MaxValue;
+            StreamWriter writer = new StreamWriter(Stream.Null) { AutoFlush = true };
+            Console.SetOut(writer);
+
+            //Act
+            try
+            {
+                PrintNumber.PrintNumbers(UpperBound);
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail("An exception was thrown: " + ex.Message);
+            }
+
+            //Assert
+            //Test passes by nature of not having thrown an exception.  On the development environment, this test
+            //took 4.9 minutes to complete.
+        }
+
+        [Fact]
         public void LisaTest1()
         {
             //Arrange

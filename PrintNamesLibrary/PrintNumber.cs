@@ -13,7 +13,7 @@
 
         public static void PrintNumbers(List<NumberNamePair> pairs, int UpperBound)
         {
-            for (int i = 1; i <= UpperBound; i++)
+            for (long i = 1; i <= UpperBound; i++)
             {
                 string PrintString = "";
                 foreach(NumberNamePair pair in pairs)
@@ -31,6 +31,13 @@
                     PrintString = i.ToString();
                 }
                 Console.WriteLine(PrintString);
+
+                //Force some garbage collection for very large runs.
+                if(i % 1000000 == 0)
+                {
+                    //Once every 1 million iterations.
+                    GC.Collect();
+                }
             }
         }
     }
