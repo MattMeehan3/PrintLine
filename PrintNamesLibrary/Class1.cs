@@ -4,24 +4,11 @@
     {
         public static void PrintNumbers(int UpperBound)
         {
-            for (int i = 1; i <= UpperBound; i++)
-            {
-                string PrintString = "";
-                if (i % 3 == 0)
-                {
-                    PrintString += "Ricky";
-                }
-                if (i % 5 == 0)
-                {
-                    PrintString += "Bobby";
-                }
-
-                if (PrintString == "")
-                {
-                    PrintString = i.ToString();
-                }
-                Console.WriteLine(PrintString);
-            }
+            //If a list of number pairs are not supplied, use the default 3/Ricky and 5/Bobby
+            List<NumberNamePair> pairs = new List<NumberNamePair>();
+            pairs.Add(new NumberNamePair(3, "Ricky"));
+            pairs.Add(new NumberNamePair(5, "Bobby"));
+            PrintNumbers(pairs, UpperBound);
         }
 
         public static void PrintNumbers(List<NumberNamePair> pairs, int UpperBound)
