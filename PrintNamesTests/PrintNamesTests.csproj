@@ -25,4 +25,13 @@
     <ProjectReference Include="..\PrintNamesLibrary\PrintNamesLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="32000000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="500000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
