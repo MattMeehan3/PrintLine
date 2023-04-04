@@ -1,6 +1,6 @@
 ﻿namespace PrintNamesLibrary
 {
-    public class Class1
+    public class PrintNumber
     {
         public static void PrintNumbers(int UpperBound)
         {
